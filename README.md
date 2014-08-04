@@ -11,7 +11,7 @@ Usage
 
 Example (in powershell, printing to console and file):
 
-AzureBlobStoreTester.exe --count=10 --accountName=_\(blob store account name\)_  --accessKey=_\(blob store access key\)_ --fileSize=5242880 --verify=true --delay=1000 | Tee-Object _\(output_file.csv\)_
+AzureBlobStoreTester.exe --count=10 --accountName=_\(blob store account name\)_  --accessKey=_\(blob store access key\)_ --fileSize=5242880B --verify=true --delay=1000 | Tee-Object _\(output_file.csv\)_
 
 This will upload a randonly generated 5 megabyte file 10 times, with a 1 second delay between uploads. It will also verify that the file has been successfully uploaded by downloading the file and comparing the contents using a SHA265 hash sum.
 
